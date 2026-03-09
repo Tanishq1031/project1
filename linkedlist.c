@@ -9,7 +9,7 @@ struct Node {
 void push(struct Node** top, int value) {
     struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
     newNode->data = value;
-    newNode->next = *top; // Point new node to current top
+    newNode->next = *top // Point new node to current top
     *top = newNode;       // Update top to the new node
 }
 
